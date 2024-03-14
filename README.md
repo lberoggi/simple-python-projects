@@ -3,12 +3,14 @@
 1. **Snake game**
    - Description: 
    - [GitHub Repository](link-to-repo)
-   - [Live Demo](link-to-demo)
+   - Sneak peek:
+     ![Alt Text](url_to_your_image)
+
 
 2. **Tic Tac Toe**
    - Description: .
-   - [GitHub Repository](link-to-repo)
-   - [Live Demo](link-to-demo)
+   - [GitHub Repository](https://github.com/lberoggi/simple-python-projects/blob/a1933c865473b07f9afd41aa6afceea27a0d83df/snake%20game.py)
+   - 
 
 3. **Pomodoro timer**
    - Description:
