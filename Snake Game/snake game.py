@@ -88,7 +88,6 @@ class snake(object):
                 elif c.dirny == -1 and c.pos[1] <= 0: c.pos = (c.pos[0],c.rows-1)
                 else: c.move(c.dirnx,c.dirny)
         
-
     def reset(self, pos):
         self.head = cube(pos)
         self.body = []
@@ -96,7 +95,6 @@ class snake(object):
         self.turns = {}
         self.dirnx = 0
         self.dirny = 1
-
 
     def addCube(self):
         tail = self.body[-1]
@@ -113,7 +111,6 @@ class snake(object):
 
         self.body[-1].dirnx = dx
         self.body[-1].dirny = dy
-        
 
     def draw(self, surface):
         for i, c in enumerate(self.body):
@@ -121,7 +118,6 @@ class snake(object):
                 c.draw(surface, True)
             else:
                 c.draw(surface)
-
 
 def drawGrid(w, rows, surface):
     sizeBtwn = w // rows
@@ -135,7 +131,6 @@ def drawGrid(w, rows, surface):
         pygame.draw.line(surface, (255,255,255), (x,0),(x,w))
         pygame.draw.line(surface, (255,255,255), (0,y),(w,y))
         
-
 def redrawWindow(surface):
     global rows, width, s, snack
     surface.fill((243,189,238))
@@ -159,7 +154,6 @@ def randomSnack(rows, item):
         
     return (x,y)
 
-
 def message_box(subject, content):
     root = tk.Tk()
     root.attributes("-topmost", True)
@@ -169,7 +163,6 @@ def message_box(subject, content):
         root.destroy()
     except:
         pass
-
 
 def main():
     global width, rows, s, snack
