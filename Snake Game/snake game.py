@@ -13,7 +13,6 @@ class cube(object):
         self.dirny = 0
         self.color = color
 
-        
     def move(self, dirnx, dirny):
         self.dirnx = dirnx
         self.dirny = dirny
@@ -32,9 +31,6 @@ class cube(object):
             circleMiddle2 = (i*dis + dis -radius*2, j*dis+8)
             pygame.draw.circle(surface, (0,0,0), circleMiddle, radius)
             pygame.draw.circle(surface, (0,0,0), circleMiddle2, radius)
-        
-
-
 
 class snake(object):
     body = []
